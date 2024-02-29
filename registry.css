@@ -150,7 +150,7 @@ line-height: 24px; /* 100% */
 }
 .main__form:not(:placeholder-shown) + .main__formlabel,
 .main__form:focus + .main__formlabel {
-	transform: translateY(-1rem) translateX(0rem) scale(0.8);
+	transform: translateY(-1rem) translateX(0.5rem) scale(0.8);
 	background: transparent;
 	height: 11px;
 	font-family: 'Inter', sans-serif;
@@ -159,6 +159,21 @@ line-height: 24px; /* 100% */
 	font-weight: 400;
 	line-height: 150%;
 	color: #2D3988;
+	background: #FFFFFF
+}
+
+.main__form:not(:placeholder-shown) + .label__greyblock,
+.main__form:focus + .label__greyblock {
+	transform: translateY(-1rem) translateX(0.5rem) scale(0.8);
+	background: transparent;
+	height: 11px;
+	font-family: 'Inter', sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+	color: #2D3988;
+	background: #F6F6F6;
 }
 
 .main__formlabel {
@@ -292,6 +307,10 @@ text-decoration-line: underline;
 }
 .block__form{
 	margin-top: 20px;
+	
+}
+.form__greyblock{
+	background-color: #F6F6F6;
 }
 
 .main__accept {
