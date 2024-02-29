@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/registry.css">
+	<title>Хакатон</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__upcontent">
+					<div class="header__logo">CraftCode</div>
+					<div class="header__langselect">ҚАЗ</div>
+				</div>
+				<div class="header__downcontent">
+					<div class="header__registrytitle">Регистрация</div>
+					<div class="header__registrysubtitle">Пройдите регистрацию и примите участие в хакатоне HardCode</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="main__container">
+				<div class="main__formflexcontainer">
+					<div class="main__nameteam">
+						<input type="text" id="team-name" class="main__form" placeholder=" " required>
+						<label for="team-name" class="main__formlabel">Название команды</label>
+					</div>
+				</div>
+				<div class="main__members">
+						<div class="main__flexnumbercontainer">
+							<div class="members__button" onclick="addParticipant()">
+								<div class="members__plus"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+									<path d="M1.1005 10.8995L7.02945 10.8995L20.8986 10.8986" stroke="white" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M11 20.799V14.87V1" stroke="white" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg></div>
+								<div class="members__text">Добавить участника</div>
+							</div>
+							<div class="members__number">Количество участников: <span class="members__numberspan">1</span></div>
+						</div>
+				</div>
+				<div class="main__formblock">
+					<div class="main__blockflexcontainer">
+						<div class="main__block">
+							<div class="main__nameteam block__form">
+								<input type="text" id="team-name" class="main__form" placeholder=" " required>
+								<label for="team-name" class="main__formlabel">Имя</label>
+							</div>
+							<div class="main__nameteam block__form">
+								<input type="text" id="team-name" class="main__form" placeholder=" " required>
+								<label for="team-name" class="main__formlabel">Фамилия</label>
+							</div>
+							<div class="main__nameteam block__form">
+								<input type="email" id="team-name" class="main__form" placeholder=" " required>
+								<label for="team-name" class="main__formlabel">Email</label>
+							</div>
+								<div class="main__nameteam block__form">
+									<input type="number" id="team-name" class="main__form" placeholder=" " required>
+									<label for="team-name" class="main__formlabel">Номер телефона</label>
+								</div>
+							<div class="main__loadresume">
+								<input type="file" id="resumeInput" class="main__resumeinput" hidden accept=".doc, .docx, .pdf" hidden>
+								<div class="main__resumeimg">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path d="M17.0204 7.28008H7.09064M17.0203 12.2127H7.08797M13.7476 17.1441H7.08797M3.27246 2.18176H20.727V22.2387H3.27246V2.18176Z" stroke="#2D3988" stroke-width="1.61324" stroke-linecap="round" stroke-linejoin="round"/>
+									 </svg>
+									</div>
+								<div class="main__resumetext" onclick="document.getElementById('resumeInput').click()">
+									 <span class="main__resumespan">Загрузить резюме </span><span id="optionalText">(необязательно)</span>
+								</div>
+						  </div>
+						</div>
+						<svg class="main__cross" onclick="addParticipant()" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+							<path d="M1 13.5L4.59348 9.90652L12.9989 1.5" stroke="#9A9A9A" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M13 13.5L9.40652 9.90652L1 1.5" stroke="#9A9A9A" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/>
+						 </svg>
+					</div>
+				</div>
+				<div class="main__accept">
+					<div class="main__acceptflexcontainer">
+						<div class="main__acceptconditions">
+							<div class="acceptconditions__img" id="checkboxImage">
+								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+									 <path d="M2.75 7.15C2.75 5.60986 2.75 4.83978 3.04973 4.25153C3.31338 3.73408 3.73408 3.31338 4.25153 3.04973C4.83978 2.75 5.60986 2.75 7.15 2.75H14.85C16.3901 2.75 17.1602 2.75 17.7485 3.04973C18.2659 3.31338 18.6866 3.73408 18.9503 4.25153C19.25 4.83978 19.25 5.60986 19.25 7.15V14.85C19.25 16.3901 19.25 17.1602 18.9503 17.7485C18.6866 18.2659 18.2659 18.6866 17.7485 18.9503C17.1602 19.25 16.3901 19.25 14.85 19.25H7.15C5.60986 19.25 4.83978 19.25 4.25153 18.9503C3.73408 18.6866 3.31338 18.2659 3.04973 17.7485C2.75 17.1602 2.75 16.3901 2.75 14.85V7.15Z" stroke="#222222" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+									 <!-- Hidden checkmark path -->
+									 <path class="checkmark" d="M6 11L10 15L16 9" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"/>
+								</svg>
+						  </div>
+		  
+							<div class="acceptconditions__text">Я прочитал(а) и согласен(на) с правилами и условиями участия в хакатоне</div>
+						</div>
+						<div class="main__acceptbutton">
+							<div class="accepbutton__text">Отправить заявку</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__line"><svg xmlns="http://www.w3.org/2000/svg" width="1880" height="2" viewBox="0 0 1880 2" fill="none">
+				<path opacity="0.5" d="M0 0.994629H1880" stroke="#91A4AE" stroke-width="1.5" stroke-dasharray="20 20"/>
+			</svg></div>
+			<div class="footer__container">
+				<div class="footer__name">© 2024, CraftCode</div>
+				<div class="footer__icon">
+					<div class="icon__img"><img src="./image/omen-icon.png" alt=""></div>
+					<div class="icon__text">OMEN Design</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
