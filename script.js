@@ -64,49 +64,54 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // mobile slider // 
-// document.addEventListener('DOMContentLoaded', (event) => {
-// 	const list = document.querySelector('.mentors__list');
-// 	const slides = list.querySelectorAll('.mentors__block');
-// 	const progressContainer = document.querySelector('.slider-progress');
-// 	let currentSlide = 0;
+document.addEventListener('DOMContentLoaded', (event) => {
+	const list = document.querySelector('.mentors__list');
+	const slides = list.querySelectorAll('.mentors__block');
+	const progressContainer = document.querySelector('.slider-progress');
+	let currentSlide = 0;
 
-// 	// Create progress indicators
-// 	slides.forEach((slide, index) => {
-// 		 const progressBar = document.createElement('div');
-// 		 progressBar.className = 'progress-bar' + (index === 0 ? ' active' : '');
-// 		 progressContainer.appendChild(progressBar);
-// 	});
+	// Create progress indicators
+	slides.forEach((slide, index) => {
+		 const progressBar = document.createElement('div');
+		 progressBar.className = 'progress-bar' + (index === 0 ? ' active' : '');
+		 progressContainer.appendChild(progressBar);
+	});
 
-// 	const progressBars = progressContainer.querySelectorAll('.progress-bar');
+	const progressBars = progressContainer.querySelectorAll('.progress-bar');
 
-// 	// Function to go to a slide
-// 	const goToSlide = (index) => {
-// 		 list.style.transform = `translateX(-${index * 100}%)`;
-// 		 progressBars.forEach((bar, i) => {
-// 			  bar.classList[i === index ? 'add' : 'remove']('active');
-// 		 });
-// 		 currentSlide = index;
-// 	};
+	// Function to go to a slide
+	const goToSlide = (index) => {
+		 list.style.transform = `translateX(-${index * 100}%)`;
+		 progressBars.forEach((bar, i) => {
+			  bar.classList[i === index ? 'add' : 'remove']('active');
+		 });
+		 currentSlide = index;
+	};
 
-// 	// Auto-scroll functionality
-// 	const startAutoScroll = () => {
-// 		 return setInterval(() => {
-// 			  let nextSlide = currentSlide + 1 < slides.length ? currentSlide + 1 : 0;
-// 			  goToSlide(nextSlide);
-// 		 }, 3000); // Change slide every 3 seconds
-// 	};
+	// Auto-scroll functionality
+	const startAutoScroll = () => {
+		 return setInterval(() => {
+			// TODO condition
+			console.log("WIDTH: ",window.innerWidth);
+			if(window.innerWidth >350){
+				return;
+			}
+			  let nextSlide = currentSlide + 1 < slides.length ? currentSlide + 1 : 0;
+			  goToSlide(nextSlide);
+		 }, 3000); // Change slide every 3 seconds
+	};
 
-// 	let intervalId = startAutoScroll();
+	let intervalId = startAutoScroll();
 
-// 	// Click event on progress bars for manual control
-// 	progressBars.forEach((bar, index) => {
-// 		 bar.addEventListener('click', () => {
-// 			  clearInterval(intervalId); // Stop auto-scrolling
-// 			  goToSlide(index);
-// 			  intervalId = startAutoScroll(); // Start auto-scrolling again
-// 		 });
-// 	});
-// });
+	// Click event on progress bars for manual control
+	progressBars.forEach((bar, index) => {
+		 bar.addEventListener('click', () => {
+			  clearInterval(intervalId); // Stop auto-scrolling
+			  goToSlide(index);
+			  intervalId = startAutoScroll(); // Start auto-scrolling again
+		 });
+	});
+});
 
 // checkbar registry //
 document.addEventListener('DOMContentLoaded', () => {
