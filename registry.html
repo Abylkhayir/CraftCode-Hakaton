@@ -25,7 +25,7 @@
 				<div class="main__formflexcontainer">
 					<div class="main__nameteam">
 						<input type="text" id="team-name" class="main__form" placeholder=" " required>
-						<label for="team-name" class="main__formlabel">Название команды</label>
+						<label for="team-name" id="team-name" class="main__formlabel">Название команды</label>
 					</div>
 				</div>
 				<div class="main__members">
@@ -44,20 +44,20 @@
 					<div class="main__blockflexcontainer">
 						<div class="main__block">
 							<div class="main__nameteam block__form">
-								<input type="text" id="team-name" class="main__form form__greyblock" placeholder=" " required>
-								<label for="team-name" class="main__formlabel label__greyblock">Имя</label>
+								<input type="text" id="firstName" class="main__form form__greyblock" placeholder=" " required>
+								<label for="team-name" id="firstName" class="main__formlabel label__greyblock">Имя</label>
 							</div>
 							<div class="main__nameteam block__form">
-								<input type="text" id="team-name" class="main__form form__greyblock" placeholder=" " required>
-								<label for="team-name" class="main__formlabel label__greyblock">Фамилия</label>
+								<input type="text" id="lastName" class="main__form form__greyblock" placeholder=" " required>
+								<label for="team-name" id="lastName" class="main__formlabel label__greyblock">Фамилия</label>
 							</div>
 							<div class="main__nameteam block__form">
-								<input type="email" id="team-name" class="main__form form__greyblock" placeholder=" " required>
-								<label for="team-name" class="main__formlabel label__greyblock">Email</label>
+								<input type="email" id="email" class="main__form form__greyblock" placeholder=" " required>
+								<label for="team-name" id="email" class="main__formlabel label__greyblock">Email</label>
 							</div>
 								<div class="main__nameteam block__form">
-									<input type="number" id="team-name" class="main__form form__greyblock" placeholder=" " required>
-									<label for="team-name" class="main__formlabel label__greyblock">Номер телефона</label>
+									<input type="string" id="phoneNumber" class="main__form form__greyblock" placeholder=" " required>
+									<label for="team-name" id="phoneNumber" class="main__formlabel label__greyblock">Номер телефона</label>
 								</div>
 							<div class="main__loadresume">
 								<input type="file" id="resumeInput" class="main__resumeinput" hidden accept=".doc, .docx, .pdf" hidden>
@@ -66,7 +66,7 @@
 										<path d="M17.0204 7.28008H7.09064M17.0203 12.2127H7.08797M13.7476 17.1441H7.08797M3.27246 2.18176H20.727V22.2387H3.27246V2.18176Z" stroke="#2D3988" stroke-width="1.61324" stroke-linecap="round" stroke-linejoin="round"/>
 									 </svg>
 									</div>
-								<div class="main__resumetext" onclick="document.getElementById('resumeInput').click()">
+								<div class="main__resumetext" id="resumeInput" onclick="document.getElementById('resumeInput').click()">
 									 <span class="main__resumespan">Загрузить резюме </span><span id="optionalText">(необязательно)</span>
 								</div>
 						  </div>
@@ -83,7 +83,6 @@
 							<div class="acceptconditions__img" id="checkboxImage">
 								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
 									 <path d="M2.75 7.15C2.75 5.60986 2.75 4.83978 3.04973 4.25153C3.31338 3.73408 3.73408 3.31338 4.25153 3.04973C4.83978 2.75 5.60986 2.75 7.15 2.75H14.85C16.3901 2.75 17.1602 2.75 17.7485 3.04973C18.2659 3.31338 18.6866 3.73408 18.9503 4.25153C19.25 4.83978 19.25 5.60986 19.25 7.15V14.85C19.25 16.3901 19.25 17.1602 18.9503 17.7485C18.6866 18.2659 18.2659 18.6866 17.7485 18.9503C17.1602 19.25 16.3901 19.25 14.85 19.25H7.15C5.60986 19.25 4.83978 19.25 4.25153 18.9503C3.73408 18.6866 3.31338 18.2659 3.04973 17.7485C2.75 17.1602 2.75 16.3901 2.75 14.85V7.15Z" stroke="#222222" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-									 <!-- Hidden checkmark path -->
 									 <path class="checkmark" d="M6 11L10 15L16 9" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"/>
 								</svg>
 						  </div>
