@@ -181,10 +181,20 @@ function toggleContent() {
 	
 
 	menuBurger.addEventListener('click', function () {
-		 headerNavbar.classList.toggle('active-menu');
-		 headerFlexContainer.classList.toggle('active-menu');
-		 menuBurger.classList.toggle('active');
-	});
+		headerNavbar.classList.toggle('active-menu');
+		headerFlexContainer.classList.toggle('active-menu');
+		menuBurger.classList.toggle('active');
+  });
+
+  // Новый код: Закрытие бургер-меню при нажатии на элемент навигации
+  let navItems = document.querySelectorAll('.navbar__item a');
+  navItems.forEach(item => {
+		item.addEventListener('click', function () {
+			 headerNavbar.classList.remove('active-menu');
+			 headerFlexContainer.classList.remove('active-menu');
+			 menuBurger.classList.remove('active');
+		});
+  });
 });
  // menu burger // 
  document.querySelector('.my-svg').classList.add('black-stroke');

@@ -186,11 +186,10 @@ function submitForm() {
 			  })
 			  .then(data => {
 					console.log('Success:', data);
-					alert('Форма успешно отправлена!');
+					window.location.href = 'registry-complete.html';
 			  })
 			  .catch((error) => {
 					console.error('Error:', error);
-					alert('Произошла ошибка при отправке формы: ' + error.message);
 			  });
 	}
 }
