@@ -8,38 +8,46 @@
 </head>
 <body>
 	<div class="wrapper">
+		<button id="scrollTopBtn" style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+			<path d="M12 19V5M5 12l7-7 7 7"/>
+	</svg>
+	</button>
 		<header class="header">
 			<div class="header__container">
 				<div class="header__flexcontainer">
 					<div class="header__name">
 						CraftCode
 					</div>
+					<div class="menu-burger">
+						<span class="burger-span-one"></span>
+						<span class="burger-span-two"></span>
+						<span class="burger-span-three"></span>
+					</div>
 					<nav class="header__navbar">
 						<ul class="navbar__list">
-							<li class="navbar__item">О хакатоне</li>
-							<li class="navbar__item">Программа</li>
-							<li class="navbar__item">Спикеры и менторы</li>
-							<li class="navbar__item">Условия участия</li>
-							<li class="navbar__item">Призы и Награды</li>
+							<li class="navbar__item"><a href="#about">О хакатоне</a></li>
+							<li class="navbar__item"><a href="#program">Программа</a></li>
+							<li class="navbar__item"><a href="#speakers">Спикеры и менторы</a></li>
+							<li class="navbar__item"><a href="#conditions">Условия участия</a></li>
+							<li class="navbar__item"><a href="#prizes">Призы и Награды</a></li>
 							<li class="navbar__item">
-								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
-									<path d="M9.5 1L1 11.2H8.65L7.8 18L16.3 7.8H8.65L9.5 1Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-								 </svg>
-								Регистрация
+								<svg class="navbar__itemimg" xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+									<path d="M9.5 1L1 11.2H8.65L7.8 18L16.3 7.8H8.65L9.5 1Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+								<a href="#registration">Регистрация</a>
 							</li>
 						</ul>
-					</nav>
-					<div class="header__lang">
-						<div class="lang__dropdown">
-							 <button class="lang__dropbtn" id="currentLang">РУС</button>
-							 <div class="lang__dropdown-content">
-								  <a href="page_kaz.html" class="lang-link" data-lang="ҚАЗ">ҚАЗ</a>
-								  <a href="page_rus.html" class="lang-link" data-lang="РУС">РУС</a>
-								  <a href="page_eng.html" class="lang-link" data-lang="ENG">ENG</a>
-							 </div>
-						</div>
-				  </div>				  
-						 
+						<div class="header__lang">
+							<div class="lang__dropdown">
+								<button class="lang__dropbtn" id="currentLang">РУС</button>
+								<div class="lang__dropdown-content">
+									<a href="page_kaz.html" class="lang-link" data-lang="ҚАЗ">ҚАЗ</a>
+									<a href="page_rus.html" class="lang-link" data-lang="РУС">РУС</a>
+									<a href="page_eng.html" class="lang-link" data-lang="ENG">ENG</a>
+								</div>
+							</div>
+						</div>	
+					</nav>			  
 				</div>
 				<div class="header__main">
 					<div class="main__flexcontainer">
@@ -50,7 +58,7 @@
 							<div class="transition__button">
 								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16" fill="none">
 									<path d="M17.7578 6.778C18.6487 6.778 19.0949 5.70086 18.4649 5.07089L15.515 2.121C15.1245 1.73053 15.1245 1.09747 15.515 0.707C15.9055 0.316535 16.5385 0.316535 16.929 0.707L23.2929 7.07089C23.6834 7.46142 23.6834 8.09458 23.2929 8.48511L16.929 14.849C16.5385 15.2395 15.9055 15.2395 15.515 14.849C15.1245 14.4585 15.1245 13.8255 15.515 13.435L18.4649 10.4851C19.0949 9.85514 18.6487 8.778 17.7578 8.778H1C0.447715 8.778 0 8.33029 0 7.778C0 7.22572 0.447715 6.778 1 6.778H17.7578Z" fill="#2D2DB1"/>
-								 </svg>
+								</svg>
 								<div class="button__text">Присоединиться</div>
 							</div>
 							<div class="transition__location">
@@ -66,7 +74,7 @@
 			<div class="main__container">
 				<div class="main__time">
 					<div class="time__container">
-						<div class="time__title">СОБИРАЙ КОМАНДУ И ПОДАВАЙ ЗАЯВКУ ДО <span class="timetitle__color">22 марта 2024</span></div>
+							<div class="time__title">СОБИРАЙ КОМАНДУ И ПОДАВАЙ ЗАЯВКУ ДО <span class="timetitle__color">22 марта 2024</span></div>
 						<ul class="time__timer">
 							<li class="timer__day">00 <span class="timer__lower">дней</span></li>
 							<li class="timer__hour">00 <span class="timer__lower">часов</span></li>
@@ -78,11 +86,11 @@
 				<div class="footer__line">
 					<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="2" viewBox="0 0 1880 2" fill="none">
 						<path opacity="0.5" d="M0 0.994629H1880" stroke="#91A4AE" stroke-width="1.5" stroke-dasharray="20 20"/>
-					 </svg>
+					</svg>
 				</div>
 				<div class="main__about">
 					<div class="about__container">
-						<div class="about__title">О хакатоне</div>
+						<div class="about__title" id="about">О хакатоне</div>
 						<div class="about__image">
 							<div class="image__sliders">
 								<div class="sliders__slides">
@@ -103,131 +111,378 @@
 				<div class="main__programminfo">
 					<div class="programminfo__container">
 						<div class="programminfo__titleblock">
-							<div class="programminfo__title">Программа мероприятия</div>
+							<div class="programminfo__title" id="program">Программа мероприятия</div>
 							<div class="programminfo__downloadblock">
 								<div class="downloadblock__img"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
 									<path fill-rule="evenodd" clip-rule="evenodd" d="M1.16675 2.33341C1.16675 1.68908 1.68908 1.16675 2.33341 1.16675H14.0001C14.5885 1.16675 15.0848 1.60487 15.1577 2.18871L15.6133 5.83342H25.6667C26.3111 5.83342 26.8334 6.35575 26.8334 7.00008V25.6667C26.8334 26.3111 26.3111 26.8334 25.6667 26.8334H12.2501C11.6617 26.8334 11.1654 26.3953 11.0924 25.8115L10.6368 22.1667H2.33341C1.68908 22.1667 1.16675 21.6444 1.16675 21.0001V2.33341ZM12.9883 22.1667L13.0851 22.9408L13.7624 22.1667H12.9883ZM15.0118 19.8334H3.50008V3.50008H12.9702L15.0118 19.8334ZM14.8211 24.5001H24.5001V8.16675H15.905L16.1967 10.5001H20.4167C21.0611 10.5001 21.5834 11.0224 21.5834 11.6667C21.5834 12.3111 21.0611 12.8334 20.4167 12.8334H16.4883L16.78 15.1667H20.4167C21.0611 15.1667 21.5834 15.6891 21.5834 16.3334C21.5834 16.9777 21.0611 17.5001 20.4167 17.5001H17.0717L17.4911 20.8554C17.5324 21.1857 17.4306 21.5178 17.2114 21.7683L14.8211 24.5001ZM4.66675 7.00008C4.66675 6.35575 5.18908 5.83342 5.83342 5.83342H9.91675C10.5611 5.83342 11.0834 6.35575 11.0834 7.00008C11.0834 7.64441 10.5611 8.16675 9.91675 8.16675H5.83342C5.18908 8.16675 4.66675 7.64441 4.66675 7.00008ZM4.66675 11.6667C4.66675 11.0224 5.18908 10.5001 5.83342 10.5001H10.5001C11.1444 10.5001 11.6667 11.0224 11.6667 11.6667C11.6667 12.3111 11.1444 12.8334 10.5001 12.8334H5.83342C5.18908 12.8334 4.66675 12.3111 4.66675 11.6667ZM4.66675 16.3334C4.66675 15.6891 5.18908 15.1667 5.83342 15.1667H11.0834C11.7277 15.1667 12.2501 15.6891 12.2501 16.3334C12.2501 16.9777 11.7277 17.5001 11.0834 17.5001H5.83342C5.18908 17.5001 4.66675 16.9777 4.66675 16.3334Z" fill="#333333"/>
-								 </svg></div>
+								</svg></div>
 								<div class="downloadblock__text">Скачать программу мероприятия</div>
 							</div>
 						</div>
-						<table class="programminfo__table">
-							<div class="table__title">
-								<div class="table__thtitle">
-									1 день
+						<div class="desktop__content">
+							<table class="programminfo__table">
+								<div class="table__title">
+									<div class="table__thtitle">
+										1 день
+									</div>
+									<div class="table__arrowimage" id="">
+										<svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10" fill="none">
+											<path d="M16.2461 1L8.99998 9L1.00005 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>								</div>
 								</div>
-								<div class="table__arrowimage" id="">
-									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10" fill="none">
-										<path d="M16.2461 1L8.99998 9L1.00005 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-									 </svg>								</div>
-							</div>
-							<tbody class="table__body">
-								<tr class="table__list">
-									<td class="table__item">08:00 - 09:00</td>
-									<td class="table__item">Регистрация</td>
-									<td class="table__item">Участники регистрируются, получают наборы участника</td>
-								</tr>
-								<tr class="table__list">
-									<td class="table__itemwhite">09:00 - 09:30</td>
-									<td class="table__itemwhite">Открытие и приветственное слово</td>
-									<td class="table__itemwhite">Организаторы приветствуют участников и объясняют правила хакатона</td>
-								</tr>
-								<tr class="table__list">
-										<td class="table__itemwhite">09:30 - 10:00</td>
-										<td class="table__itemwhite">Ключевая лекция</td>
-										<td class="table__itemwhite">Выступление специального гостя или эксперта в области технологий</td>
-								</tr>
-								<tr class="table__list">
-									<td class="table__itemwhite">10:00 - 10:30</td>
-									<td class="table__itemwhite">Формирование команд</td>
-									<td class="table__itemwhite">Участники объединяются в команды</td>
-								</tr>
-								<tr class="table__list">
-									<td class="table__item">10:30 - 13:00</td>
-									<td class="table__item">Начало хакатона</td>
-									<td class="table__item">Команды начинают работу над проектами</td>
-								</tr>
-								<tr class="table__list">
-										<td class="table__itemwhite">13:00 - 14:00</td>
-										<td class="table__itemwhite">Обед</td>
-										<td class="table__itemwhite">Перерыв на обед</td>
-								</tr>
-								<tr class="table__list">
-										<td class="table__item">14:00 - 18:00</td>
-										<td class="table__item">Продолжение работы</td>
-										<td class="table__item">Команды продолжают разработку проектов</td>
-								</tr>
-								<tr class="table__list">
-									<td class="table__itemwhite">18:00 - 19:00</td>
-									<td class="table__itemwhite">Ужин</td>
-									<td class="table__itemwhite">Перерыв на ужин</td>
-								</tr>
-								<tr class="table__list">
-									<td class="table__item">19:00 - 22:00</td>
-									<td class="table__item">Вечерняя сессия</td>
-									<td class="table__item">Продолжение работы над проектами</td>
-								</tr>
-							</tbody>
-						</table>
-						<table class="programminfo__table">
-							<div class="table__title">
-								<div class="table__thtitle">
-									 2 день
+								<tbody class="table__body">
+									<tr class="table__list">
+										<td class="table__item">08:00 - 09:00</td>
+										<td class="table__item">Регистрация</td>
+										<td class="table__item">Участники регистрируются, получают наборы участника</td>
+									</tr>
+									<tr class="table__list">
+										<td class="table__itemwhite">09:00 - 09:30</td>
+										<td class="table__itemwhite">Открытие и приветственное слово</td>
+										<td class="table__itemwhite">Организаторы приветствуют участников и объясняют правила хакатона</td>
+									</tr>
+									<tr class="table__list">
+											<td class="table__itemwhite">09:30 - 10:00</td>
+											<td class="table__itemwhite">Ключевая лекция</td>
+											<td class="table__itemwhite">Выступление специального гостя или эксперта в области технологий</td>
+									</tr>
+									<tr class="table__list">
+										<td class="table__itemwhite">10:00 - 10:30</td>
+										<td class="table__itemwhite">Формирование команд</td>
+										<td class="table__itemwhite">Участники объединяются в команды</td>
+									</tr>
+									<tr class="table__list">
+										<td class="table__item">10:30 - 13:00</td>
+										<td class="table__item">Начало хакатона</td>
+										<td class="table__item">Команды начинают работу над проектами</td>
+									</tr>
+									<tr class="table__list">
+											<td class="table__itemwhite">13:00 - 14:00</td>
+											<td class="table__itemwhite">Обед</td>
+											<td class="table__itemwhite">Перерыв на обед</td>
+									</tr>
+									<tr class="table__list">
+											<td class="table__item">14:00 - 18:00</td>
+											<td class="table__item">Продолжение работы</td>
+											<td class="table__item">Команды продолжают разработку проектов</td>
+									</tr>
+									<tr class="table__list">
+										<td class="table__itemwhite">18:00 - 19:00</td>
+										<td class="table__itemwhite">Ужин</td>
+										<td class="table__itemwhite">Перерыв на ужин</td>
+									</tr>
+									
+									<tr class="table__list">
+										<td class="table__item">19:00 - 22:00</td>
+										<td class="table__item">Вечерняя сессия</td>
+										<td class="table__item">Продолжение работы над проектами</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="programminfo__table">
+								<div class="table__title">
+									<div class="table__thtitle">
+										2 день
+									</div>
+									<div class="table__arrowimage">
+										<svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10" fill="none">
+											<path d="M16.2461 1L8.99998 9L1.00005 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</div>
 								</div>
-								<div class="table__arrowimage">
-									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10" fill="none">
-										<path d="M16.2461 1L8.99998 9L1.00005 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-									 </svg>
+								<tbody class="table__body">
+									<tr class="table__list">
+										<td class="table__itemwhite">08:00 - 09:00</td>
+										<td class="table__itemwhite">Завтрак</td>
+										<td class="table__itemwhite">Утренний перерыв на завтрак</td>
+									</tr>
+									<tr class="table__list">
+										<td class="table__item">09:00 - 12:00</td>
+										<td class="table__item">Работа над проектами</td>
+										<td class="table__item">Команды продолжают разработку</td>
+									</tr>
+									<tr class="table__list">
+											<td class="table__itemwhite">12:00 - 13:00</td>
+											<td class="table__itemwhite">Обед</td>
+											<td class="table__itemwhite">Перерыв на обед</td>
+									</tr>
+									<tr class="table__list">
+										<td class="table__item">13:00 - 15:00</td>
+										<td class="table__item">Финальная стадия разработки</td>
+										<td class="table__item">Завершение работ над проектами</td>
+									</tr>
+									<tr class="table__list">
+										<td class="table__itemwhite">15:00 - 16:00</td>
+										<td class="table__itemwhite">Подготовка к презентациям</td>
+										<td class="table__itemwhite">Команды готовятся к демонстрации своих проектов</td>
+									</tr>
+									<tr class="table__list">
+											<td class="table__item">16:00 - 18:00</td>
+											<td class="table__item">Презентации проектов</td>
+											<td class="table__item">Каждая команда представляет свой проект перед жюри и другими участниками</td>
+									</tr>
+									<tr class="table__list">
+											<td class="table__itemwhite">18:00 - 18:30</td>
+											<td class="table__itemwhite">Оценка жюри и подведение итогов</td>
+											<td class="table__itemwhite">Жюри обсуждает проекты и выбирает победителей</td>
+									</tr>
+									<tr class="table__list">
+										<td class="table__item">18:30 - 19:00</td>
+										<td class="table__item">Церемония награждения</td>
+										<td class="table__item">Награждение победителей и закрытие хакатона</td>
+									</tr>
+									<tr class="table__list">
+										<td class="table__itemwhite">19:00 - 20:00</td>
+										<td class="table__itemwhite">Заключительный коктейль</td>
+										<td class="table__itemwhite">Неформальное общение и обмен контактами</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="mobile__content">
+							<table class="programminfo__table">
+								<div class="table__title">
+									<div class="table__thtitle">
+										1 день
+									</div>
+									<div class="table__arrowimage" id="">
+										<svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10" fill="none">
+											<path d="M16.2461 1L8.99998 9L1.00005 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>								</div>
 								</div>
-							</div>
-							<tbody class="table__body">
-								<tr class="table__list">
-									<td class="table__itemwhite">08:00 - 09:00</td>
-									<td class="table__itemwhite">Завтрак</td>
-									<td class="table__itemwhite">Утренний перерыв на завтрак</td>
-								</tr>
-								<tr class="table__list">
-									<td class="table__item">09:00 - 12:00</td>
-									<td class="table__item">Работа над проектами</td>
-									<td class="table__item">Команды продолжают разработку</td>
-								</tr>
-								<tr class="table__list">
-										<td class="table__itemwhite">12:00 - 13:00</td>
-										<td class="table__itemwhite">Обед</td>
-										<td class="table__itemwhite">Перерыв на обед</td>
-								</tr>
-								<tr class="table__list">
-									<td class="table__item">13:00 - 15:00</td>
-									<td class="table__item">Финальная стадия разработки</td>
-									<td class="table__item">Завершение работ над проектами</td>
-								</tr>
-								<tr class="table__list">
-									<td class="table__itemwhite">15:00 - 16:00</td>
-									<td class="table__itemwhite">Подготовка к презентациям</td>
-									<td class="table__itemwhite">Команды готовятся к демонстрации своих проектов</td>
-								</tr>
-								<tr class="table__list">
-										<td class="table__item">16:00 - 18:00</td>
-										<td class="table__item">Презентации проектов</td>
-										<td class="table__item">Каждая команда представляет свой проект перед жюри и другими участниками</td>
-								</tr>
-								<tr class="table__list">
-										<td class="table__itemwhite">18:00 - 18:30</td>
-										<td class="table__itemwhite">Оценка жюри и подведение итогов</td>
-										<td class="table__itemwhite">Жюри обсуждает проекты и выбирает победителей</td>
-								</tr>
-								<tr class="table__list">
-									<td class="table__item">18:30 - 19:00</td>
-									<td class="table__item">Церемония награждения</td>
-									<td class="table__item">Награждение победителей и закрытие хакатона</td>
-								</tr>
-								<tr class="table__list">
-									<td class="table__itemwhite">19:00 - 20:00</td>
-									<td class="table__itemwhite">Заключительный коктейль</td>
-									<td class="table__itemwhite">Неформальное общение и обмен контактами</td>
-								</tr>
-							</tbody>
-						</table>
+								<tbody class="table__body">
+									<tr class="table__list">
+										<td class="table__item">
+											<div class="table__itemtimeblock">
+												<div class="itemtimeblock__img"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5564 0.75 17.25 4.44365 17.25 9C17.25 13.5564 13.5564 17.25 9 17.25C4.44365 17.25 0.75 13.5564 0.75 9ZM9 2.25C5.27208 2.25 2.25 5.27208 2.25 9C2.25 12.7279 5.27208 15.75 9 15.75C12.7279 15.75 15.75 12.7279 15.75 9C15.75 5.27208 12.7279 2.25 9 2.25ZM9.00319 3.75C9.4174 3.75004 9.75315 4.08586 9.75311 4.50008L9.75269 8.69267L12.7128 11.6527C13.0057 11.9456 13.0057 12.4205 12.7128 12.7134C12.4199 13.0063 11.945 13.0063 11.6521 12.7134L8.47233 9.53363C8.33166 9.39296 8.25264 9.20216 8.25266 9.00323L8.25311 4.49992C8.25315 4.08571 8.58897 3.74996 9.00319 3.75Z" fill="#2D2DB1" fill-opacity="0.85"/>
+												 </svg></div>
+												<div class="itemtimeblock__number">08:00 - 09:00</div>
+											</div>
+											<div class="table__itemtitle">Регистрация</div>
+											<div class="table__itemsubtitle">Участники регистрируются, получают наборы участника</div>
+										</td>
+									</tr>
+									<tr class="table__list">
+										<td class="table__itemwhite">
+											<div class="table__itemtimeblock">
+												<div class="itemtimeblock__img"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5564 0.75 17.25 4.44365 17.25 9C17.25 13.5564 13.5564 17.25 9 17.25C4.44365 17.25 0.75 13.5564 0.75 9ZM9 2.25C5.27208 2.25 2.25 5.27208 2.25 9C2.25 12.7279 5.27208 15.75 9 15.75C12.7279 15.75 15.75 12.7279 15.75 9C15.75 5.27208 12.7279 2.25 9 2.25ZM9.00319 3.75C9.4174 3.75004 9.75315 4.08586 9.75311 4.50008L9.75269 8.69267L12.7128 11.6527C13.0057 11.9456 13.0057 12.4205 12.7128 12.7134C12.4199 13.0063 11.945 13.0063 11.6521 12.7134L8.47233 9.53363C8.33166 9.39296 8.25264 9.20216 8.25266 9.00323L8.25311 4.49992C8.25315 4.08571 8.58897 3.74996 9.00319 3.75Z" fill="black" fill-opacity="0.85"/>
+												 </svg></div>
+												<div class="itemtimeblock__number">09:00 - 09:30</div>
+											</div>
+											<div class="table__itemtitle">Открытие и приветственное слово</div>
+											<div class="table__itemsubtitle">Организаторы приветствуют участников и объясняют правила хакатона</div>
+										</td>
+									</tr>
+									<tr class="table__list">
+										<td class="table__itemwhite">
+											<div class="table__itemtimeblock">
+												<div class="itemtimeblock__img"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5564 0.75 17.25 4.44365 17.25 9C17.25 13.5564 13.5564 17.25 9 17.25C4.44365 17.25 0.75 13.5564 0.75 9ZM9 2.25C5.27208 2.25 2.25 5.27208 2.25 9C2.25 12.7279 5.27208 15.75 9 15.75C12.7279 15.75 15.75 12.7279 15.75 9C15.75 5.27208 12.7279 2.25 9 2.25ZM9.00319 3.75C9.4174 3.75004 9.75315 4.08586 9.75311 4.50008L9.75269 8.69267L12.7128 11.6527C13.0057 11.9456 13.0057 12.4205 12.7128 12.7134C12.4199 13.0063 11.945 13.0063 11.6521 12.7134L8.47233 9.53363C8.33166 9.39296 8.25264 9.20216 8.25266 9.00323L8.25311 4.49992C8.25315 4.08571 8.58897 3.74996 9.00319 3.75Z" fill="black" fill-opacity="0.85"/>
+												 </svg></div>
+												<div class="itemtimeblock__number">09:30 - 10:00</div>
+											</div>
+											<div class="table__itemtitle">Ключевая лекция</div>
+											<div class="table__itemsubtitle">Выступление специального гостя или эксперта в области технологий</div>
+										</td>
+									</tr>
+									<tr class="table__list">
+										<td class="table__itemwhite">
+											<div class="table__itemtimeblock">
+												<div class="itemtimeblock__img"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5564 0.75 17.25 4.44365 17.25 9C17.25 13.5564 13.5564 17.25 9 17.25C4.44365 17.25 0.75 13.5564 0.75 9ZM9 2.25C5.27208 2.25 2.25 5.27208 2.25 9C2.25 12.7279 5.27208 15.75 9 15.75C12.7279 15.75 15.75 12.7279 15.75 9C15.75 5.27208 12.7279 2.25 9 2.25ZM9.00319 3.75C9.4174 3.75004 9.75315 4.08586 9.75311 4.50008L9.75269 8.69267L12.7128 11.6527C13.0057 11.9456 13.0057 12.4205 12.7128 12.7134C12.4199 13.0063 11.945 13.0063 11.6521 12.7134L8.47233 9.53363C8.33166 9.39296 8.25264 9.20216 8.25266 9.00323L8.25311 4.49992C8.25315 4.08571 8.58897 3.74996 9.00319 3.75Z" fill="black" fill-opacity="0.85"/>
+												 </svg></div>
+												<div class="itemtimeblock__number">10:00 - 10:30</div>
+											</div>
+											<div class="table__itemtitle">Формирование команд</div>
+											<div class="table__itemsubtitle">Участники объединяются в команды</div>
+										</td>
+									</tr>
+									<tr class="table__list">
+										<td class="table__item">
+											<div class="table__itemtimeblock">
+												<div class="itemtimeblock__img"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5564 0.75 17.25 4.44365 17.25 9C17.25 13.5564 13.5564 17.25 9 17.25C4.44365 17.25 0.75 13.5564 0.75 9ZM9 2.25C5.27208 2.25 2.25 5.27208 2.25 9C2.25 12.7279 5.27208 15.75 9 15.75C12.7279 15.75 15.75 12.7279 15.75 9C15.75 5.27208 12.7279 2.25 9 2.25ZM9.00319 3.75C9.4174 3.75004 9.75315 4.08586 9.75311 4.50008L9.75269 8.69267L12.7128 11.6527C13.0057 11.9456 13.0057 12.4205 12.7128 12.7134C12.4199 13.0063 11.945 13.0063 11.6521 12.7134L8.47233 9.53363C8.33166 9.39296 8.25264 9.20216 8.25266 9.00323L8.25311 4.49992C8.25315 4.08571 8.58897 3.74996 9.00319 3.75Z" fill="#2D2DB1" fill-opacity="0.85"/>
+												 </svg></div>
+												<div class="itemtimeblock__number">10:30 - 13:00</div>
+											</div>
+											<div class="table__itemtitle">Начало хакатона</div>
+											<div class="table__itemsubtitle">Команды начинают работу над проектами</div>
+										</td>
+									</tr>
+									<tr class="table__list">
+										<td class="table__itemwhite">
+											<div class="table__itemtimeblock">
+												<div class="itemtimeblock__img"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5564 0.75 17.25 4.44365 17.25 9C17.25 13.5564 13.5564 17.25 9 17.25C4.44365 17.25 0.75 13.5564 0.75 9ZM9 2.25C5.27208 2.25 2.25 5.27208 2.25 9C2.25 12.7279 5.27208 15.75 9 15.75C12.7279 15.75 15.75 12.7279 15.75 9C15.75 5.27208 12.7279 2.25 9 2.25ZM9.00319 3.75C9.4174 3.75004 9.75315 4.08586 9.75311 4.50008L9.75269 8.69267L12.7128 11.6527C13.0057 11.9456 13.0057 12.4205 12.7128 12.7134C12.4199 13.0063 11.945 13.0063 11.6521 12.7134L8.47233 9.53363C8.33166 9.39296 8.25264 9.20216 8.25266 9.00323L8.25311 4.49992C8.25315 4.08571 8.58897 3.74996 9.00319 3.75Z" fill="black" fill-opacity="0.85"/>
+												 </svg></div>
+												<div class="itemtimeblock__number">13:00 - 14:00</div>
+											</div>
+											<div class="table__itemtitle">Обед</div>
+											<div class="table__itemsubtitle">Перерыв на обед</div>
+										</td>
+									</tr>
+									<tr class="table__list">
+										<td class="table__item">
+											<div class="table__itemtimeblock">
+												<div class="itemtimeblock__img"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5564 0.75 17.25 4.44365 17.25 9C17.25 13.5564 13.5564 17.25 9 17.25C4.44365 17.25 0.75 13.5564 0.75 9ZM9 2.25C5.27208 2.25 2.25 5.27208 2.25 9C2.25 12.7279 5.27208 15.75 9 15.75C12.7279 15.75 15.75 12.7279 15.75 9C15.75 5.27208 12.7279 2.25 9 2.25ZM9.00319 3.75C9.4174 3.75004 9.75315 4.08586 9.75311 4.50008L9.75269 8.69267L12.7128 11.6527C13.0057 11.9456 13.0057 12.4205 12.7128 12.7134C12.4199 13.0063 11.945 13.0063 11.6521 12.7134L8.47233 9.53363C8.33166 9.39296 8.25264 9.20216 8.25266 9.00323L8.25311 4.49992C8.25315 4.08571 8.58897 3.74996 9.00319 3.75Z" fill="#2D2DB1" fill-opacity="0.85"/>
+												 </svg></div>
+												<div class="itemtimeblock__number">14:00 - 18:00</div>
+											</div>
+											<div class="table__itemtitle">Продолжение работы</div>
+											<div class="table__itemsubtitle">Команды продолжают разработку проектов</div>
+										</td>
+									</tr>
+									<tr class="table__list">
+										<td class="table__itemwhite">
+											<div class="table__itemtimeblock">
+												<div class="itemtimeblock__img"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5564 0.75 17.25 4.44365 17.25 9C17.25 13.5564 13.5564 17.25 9 17.25C4.44365 17.25 0.75 13.5564 0.75 9ZM9 2.25C5.27208 2.25 2.25 5.27208 2.25 9C2.25 12.7279 5.27208 15.75 9 15.75C12.7279 15.75 15.75 12.7279 15.75 9C15.75 5.27208 12.7279 2.25 9 2.25ZM9.00319 3.75C9.4174 3.75004 9.75315 4.08586 9.75311 4.50008L9.75269 8.69267L12.7128 11.6527C13.0057 11.9456 13.0057 12.4205 12.7128 12.7134C12.4199 13.0063 11.945 13.0063 11.6521 12.7134L8.47233 9.53363C8.33166 9.39296 8.25264 9.20216 8.25266 9.00323L8.25311 4.49992C8.25315 4.08571 8.58897 3.74996 9.00319 3.75Z" fill="black" fill-opacity="0.85"/>
+												 </svg></div>
+												<div class="itemtimeblock__number">18:00 - 19:00</div>
+											</div>
+											<div class="table__itemtitle">Ужин</div>
+											<div class="table__itemsubtitle">Перерыв на ужин</div>
+										</td>
+									</tr>
+									<tr class="table__list">
+										<td class="table__item">
+											<div class="table__itemtimeblock">
+												<div class="itemtimeblock__img"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5564 0.75 17.25 4.44365 17.25 9C17.25 13.5564 13.5564 17.25 9 17.25C4.44365 17.25 0.75 13.5564 0.75 9ZM9 2.25C5.27208 2.25 2.25 5.27208 2.25 9C2.25 12.7279 5.27208 15.75 9 15.75C12.7279 15.75 15.75 12.7279 15.75 9C15.75 5.27208 12.7279 2.25 9 2.25ZM9.00319 3.75C9.4174 3.75004 9.75315 4.08586 9.75311 4.50008L9.75269 8.69267L12.7128 11.6527C13.0057 11.9456 13.0057 12.4205 12.7128 12.7134C12.4199 13.0063 11.945 13.0063 11.6521 12.7134L8.47233 9.53363C8.33166 9.39296 8.25264 9.20216 8.25266 9.00323L8.25311 4.49992C8.25315 4.08571 8.58897 3.74996 9.00319 3.75Z" fill="#2D2DB1" fill-opacity="0.85"/>
+												 </svg></div>
+												<div class="itemtimeblock__number">19:00 - 22:00</div>
+											</div>
+											<div class="table__itemtitle">Вечерняя сессия</div>
+											<div class="table__itemsubtitle">Продолжение работы над проектами</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="programminfo__table">
+								<div class="table__title">
+									<div class="table__thtitle">
+										2 день
+									</div>
+									<div class="table__arrowimage" id="">
+										<svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10" fill="none">
+											<path d="M16.2461 1L8.99998 9L1.00005 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>								</div>
+								</div>
+								<tbody class="table__body">
+									<tr class="table__list">
+										<td class="table__item">
+											<div class="table__itemtimeblock">
+												<div class="itemtimeblock__img"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5564 0.75 17.25 4.44365 17.25 9C17.25 13.5564 13.5564 17.25 9 17.25C4.44365 17.25 0.75 13.5564 0.75 9ZM9 2.25C5.27208 2.25 2.25 5.27208 2.25 9C2.25 12.7279 5.27208 15.75 9 15.75C12.7279 15.75 15.75 12.7279 15.75 9C15.75 5.27208 12.7279 2.25 9 2.25ZM9.00319 3.75C9.4174 3.75004 9.75315 4.08586 9.75311 4.50008L9.75269 8.69267L12.7128 11.6527C13.0057 11.9456 13.0057 12.4205 12.7128 12.7134C12.4199 13.0063 11.945 13.0063 11.6521 12.7134L8.47233 9.53363C8.33166 9.39296 8.25264 9.20216 8.25266 9.00323L8.25311 4.49992C8.25315 4.08571 8.58897 3.74996 9.00319 3.75Z" fill="#2D2DB1" fill-opacity="0.85"/>
+												 </svg></div>
+												<div class="itemtimeblock__number">08:00 - 09:00</div>
+											</div>
+											<div class="table__itemtitle">Регистрация</div>
+											<div class="table__itemsubtitle">Участники регистрируются, получают наборы участника</div>
+										</td>
+									</tr>
+									<tr class="table__list">
+										<td class="table__itemwhite">
+											<div class="table__itemtimeblock">
+												<div class="itemtimeblock__img"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5564 0.75 17.25 4.44365 17.25 9C17.25 13.5564 13.5564 17.25 9 17.25C4.44365 17.25 0.75 13.5564 0.75 9ZM9 2.25C5.27208 2.25 2.25 5.27208 2.25 9C2.25 12.7279 5.27208 15.75 9 15.75C12.7279 15.75 15.75 12.7279 15.75 9C15.75 5.27208 12.7279 2.25 9 2.25ZM9.00319 3.75C9.4174 3.75004 9.75315 4.08586 9.75311 4.50008L9.75269 8.69267L12.7128 11.6527C13.0057 11.9456 13.0057 12.4205 12.7128 12.7134C12.4199 13.0063 11.945 13.0063 11.6521 12.7134L8.47233 9.53363C8.33166 9.39296 8.25264 9.20216 8.25266 9.00323L8.25311 4.49992C8.25315 4.08571 8.58897 3.74996 9.00319 3.75Z" fill="black" fill-opacity="0.85"/>
+												 </svg></div>
+												<div class="itemtimeblock__number">09:00 - 09:30</div>
+											</div>
+											<div class="table__itemtitle">Открытие и приветственное слово</div>
+											<div class="table__itemsubtitle">Организаторы приветствуют участников и объясняют правила хакатона</div>
+										</td>
+									</tr>
+									<tr class="table__list">
+										<td class="table__itemwhite">
+											<div class="table__itemtimeblock">
+												<div class="itemtimeblock__img"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5564 0.75 17.25 4.44365 17.25 9C17.25 13.5564 13.5564 17.25 9 17.25C4.44365 17.25 0.75 13.5564 0.75 9ZM9 2.25C5.27208 2.25 2.25 5.27208 2.25 9C2.25 12.7279 5.27208 15.75 9 15.75C12.7279 15.75 15.75 12.7279 15.75 9C15.75 5.27208 12.7279 2.25 9 2.25ZM9.00319 3.75C9.4174 3.75004 9.75315 4.08586 9.75311 4.50008L9.75269 8.69267L12.7128 11.6527C13.0057 11.9456 13.0057 12.4205 12.7128 12.7134C12.4199 13.0063 11.945 13.0063 11.6521 12.7134L8.47233 9.53363C8.33166 9.39296 8.25264 9.20216 8.25266 9.00323L8.25311 4.49992C8.25315 4.08571 8.58897 3.74996 9.00319 3.75Z" fill="black" fill-opacity="0.85"/>
+												 </svg></div>
+												<div class="itemtimeblock__number">09:30 - 10:00</div>
+											</div>
+											<div class="table__itemtitle">Ключевая лекция</div>
+											<div class="table__itemsubtitle">Выступление специального гостя или эксперта в области технологий</div>
+										</td>
+									</tr>
+									<tr class="table__list">
+										<td class="table__itemwhite">
+											<div class="table__itemtimeblock">
+												<div class="itemtimeblock__img"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5564 0.75 17.25 4.44365 17.25 9C17.25 13.5564 13.5564 17.25 9 17.25C4.44365 17.25 0.75 13.5564 0.75 9ZM9 2.25C5.27208 2.25 2.25 5.27208 2.25 9C2.25 12.7279 5.27208 15.75 9 15.75C12.7279 15.75 15.75 12.7279 15.75 9C15.75 5.27208 12.7279 2.25 9 2.25ZM9.00319 3.75C9.4174 3.75004 9.75315 4.08586 9.75311 4.50008L9.75269 8.69267L12.7128 11.6527C13.0057 11.9456 13.0057 12.4205 12.7128 12.7134C12.4199 13.0063 11.945 13.0063 11.6521 12.7134L8.47233 9.53363C8.33166 9.39296 8.25264 9.20216 8.25266 9.00323L8.25311 4.49992C8.25315 4.08571 8.58897 3.74996 9.00319 3.75Z" fill="black" fill-opacity="0.85"/>
+												 </svg></div>
+												<div class="itemtimeblock__number">10:00 - 10:30</div>
+											</div>
+											<div class="table__itemtitle">Формирование команд</div>
+											<div class="table__itemsubtitle">Участники объединяются в команды</div>
+										</td>
+									</tr>
+									<tr class="table__list">
+										<td class="table__item">
+											<div class="table__itemtimeblock">
+												<div class="itemtimeblock__img"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5564 0.75 17.25 4.44365 17.25 9C17.25 13.5564 13.5564 17.25 9 17.25C4.44365 17.25 0.75 13.5564 0.75 9ZM9 2.25C5.27208 2.25 2.25 5.27208 2.25 9C2.25 12.7279 5.27208 15.75 9 15.75C12.7279 15.75 15.75 12.7279 15.75 9C15.75 5.27208 12.7279 2.25 9 2.25ZM9.00319 3.75C9.4174 3.75004 9.75315 4.08586 9.75311 4.50008L9.75269 8.69267L12.7128 11.6527C13.0057 11.9456 13.0057 12.4205 12.7128 12.7134C12.4199 13.0063 11.945 13.0063 11.6521 12.7134L8.47233 9.53363C8.33166 9.39296 8.25264 9.20216 8.25266 9.00323L8.25311 4.49992C8.25315 4.08571 8.58897 3.74996 9.00319 3.75Z" fill="#2D2DB1" fill-opacity="0.85"/>
+												 </svg></div>
+												<div class="itemtimeblock__number">10:30 - 13:00</div>
+											</div>
+											<div class="table__itemtitle">Начало хакатона</div>
+											<div class="table__itemsubtitle">Команды начинают работу над проектами</div>
+										</td>
+									</tr>
+									<tr class="table__list">
+										<td class="table__itemwhite">
+											<div class="table__itemtimeblock">
+												<div class="itemtimeblock__img"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5564 0.75 17.25 4.44365 17.25 9C17.25 13.5564 13.5564 17.25 9 17.25C4.44365 17.25 0.75 13.5564 0.75 9ZM9 2.25C5.27208 2.25 2.25 5.27208 2.25 9C2.25 12.7279 5.27208 15.75 9 15.75C12.7279 15.75 15.75 12.7279 15.75 9C15.75 5.27208 12.7279 2.25 9 2.25ZM9.00319 3.75C9.4174 3.75004 9.75315 4.08586 9.75311 4.50008L9.75269 8.69267L12.7128 11.6527C13.0057 11.9456 13.0057 12.4205 12.7128 12.7134C12.4199 13.0063 11.945 13.0063 11.6521 12.7134L8.47233 9.53363C8.33166 9.39296 8.25264 9.20216 8.25266 9.00323L8.25311 4.49992C8.25315 4.08571 8.58897 3.74996 9.00319 3.75Z" fill="black" fill-opacity="0.85"/>
+												 </svg></div>
+												<div class="itemtimeblock__number">13:00 - 14:00</div>
+											</div>
+											<div class="table__itemtitle">Обед</div>
+											<div class="table__itemsubtitle">Перерыв на обед</div>
+										</td>
+									</tr>
+									<tr class="table__list">
+										<td class="table__item">
+											<div class="table__itemtimeblock">
+												<div class="itemtimeblock__img"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5564 0.75 17.25 4.44365 17.25 9C17.25 13.5564 13.5564 17.25 9 17.25C4.44365 17.25 0.75 13.5564 0.75 9ZM9 2.25C5.27208 2.25 2.25 5.27208 2.25 9C2.25 12.7279 5.27208 15.75 9 15.75C12.7279 15.75 15.75 12.7279 15.75 9C15.75 5.27208 12.7279 2.25 9 2.25ZM9.00319 3.75C9.4174 3.75004 9.75315 4.08586 9.75311 4.50008L9.75269 8.69267L12.7128 11.6527C13.0057 11.9456 13.0057 12.4205 12.7128 12.7134C12.4199 13.0063 11.945 13.0063 11.6521 12.7134L8.47233 9.53363C8.33166 9.39296 8.25264 9.20216 8.25266 9.00323L8.25311 4.49992C8.25315 4.08571 8.58897 3.74996 9.00319 3.75Z" fill="#2D2DB1" fill-opacity="0.85"/>
+												 </svg></div>
+												<div class="itemtimeblock__number">14:00 - 18:00</div>
+											</div>
+											<div class="table__itemtitle">Продолжение работы</div>
+											<div class="table__itemsubtitle">Команды продолжают разработку проектов</div>
+										</td>
+									</tr>
+									<tr class="table__list">
+										<td class="table__itemwhite">
+											<div class="table__itemtimeblock">
+												<div class="itemtimeblock__img"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5564 0.75 17.25 4.44365 17.25 9C17.25 13.5564 13.5564 17.25 9 17.25C4.44365 17.25 0.75 13.5564 0.75 9ZM9 2.25C5.27208 2.25 2.25 5.27208 2.25 9C2.25 12.7279 5.27208 15.75 9 15.75C12.7279 15.75 15.75 12.7279 15.75 9C15.75 5.27208 12.7279 2.25 9 2.25ZM9.00319 3.75C9.4174 3.75004 9.75315 4.08586 9.75311 4.50008L9.75269 8.69267L12.7128 11.6527C13.0057 11.9456 13.0057 12.4205 12.7128 12.7134C12.4199 13.0063 11.945 13.0063 11.6521 12.7134L8.47233 9.53363C8.33166 9.39296 8.25264 9.20216 8.25266 9.00323L8.25311 4.49992C8.25315 4.08571 8.58897 3.74996 9.00319 3.75Z" fill="black" fill-opacity="0.85"/>
+												 </svg></div>
+												<div class="itemtimeblock__number">18:00 - 19:00</div>
+											</div>
+											<div class="table__itemtitle">Ужин</div>
+											<div class="table__itemsubtitle">Перерыв на ужин</div>
+										</td>
+									</tr>
+									<tr class="table__list">
+										<td class="table__item">
+											<div class="table__itemtimeblock">
+												<div class="itemtimeblock__img"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5564 0.75 17.25 4.44365 17.25 9C17.25 13.5564 13.5564 17.25 9 17.25C4.44365 17.25 0.75 13.5564 0.75 9ZM9 2.25C5.27208 2.25 2.25 5.27208 2.25 9C2.25 12.7279 5.27208 15.75 9 15.75C12.7279 15.75 15.75 12.7279 15.75 9C15.75 5.27208 12.7279 2.25 9 2.25ZM9.00319 3.75C9.4174 3.75004 9.75315 4.08586 9.75311 4.50008L9.75269 8.69267L12.7128 11.6527C13.0057 11.9456 13.0057 12.4205 12.7128 12.7134C12.4199 13.0063 11.945 13.0063 11.6521 12.7134L8.47233 9.53363C8.33166 9.39296 8.25264 9.20216 8.25266 9.00323L8.25311 4.49992C8.25315 4.08571 8.58897 3.74996 9.00319 3.75Z" fill="#2D2DB1" fill-opacity="0.85"/>
+												 </svg></div>
+												<div class="itemtimeblock__number">19:00 - 22:00</div>
+											</div>
+											<div class="table__itemtitle">Вечерняя сессия</div>
+											<div class="table__itemsubtitle">Продолжение работы над проектами</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 						<div class="programminfo__button">
 							<div class="button__image"><img src="./image/it-kid.png" alt=""></div>
 							<div class="button__text">
@@ -240,8 +495,13 @@
 				</div>
 				<div class="main__mentors">
 					<div class="mentors__container">
-						<div class="mentors__title">спикеры и менторы</div>
+						<div class="mentors__title" id="speakers">спикеры и менторы</div>
 						<div class="slider-container">
+							<div class="slider-arrow left-arrow">
+								<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+									<path d="M30 34L16 21L30 8" stroke="#C8C8C8" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/>
+								 </svg>
+							</div>
 							<ul class="mentors__list">
 								<li class="mentors__block">
 									<div class="mentors__image"><img src="./image/aden.png" alt=""></div>
@@ -274,15 +534,20 @@
 									<div class="mentors__position">Разработчик, HardCode</div>
 								</li>
 							</ul>
-							<div class="slider-progress"></div>
+							<div class="slider-arrow right-arrow">
+								<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+									<path d="M14 10L28 23L14 36" stroke="#C8C8C8" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/>
+								 </svg>
+							</div>
 						</div>
+						<div class="slider-progress"></div>
 					</div>
 					<div class="mentors__backgroundtext"><img src="./image/CraftCode.svg" alt=""></div>
 				</div>
 				<div class="main__conditionimage">
 					<div class="main__conditions">
 						<div class="conditions__container">
-							<div class="conditions__title">Условия Участия</div>
+							<div class="conditions__title" id="conditions">Условия Участия</div>
 							<ul class="conditions__blocks">
 								<li class="conditions__block">
 									<div class="block__titlecond">Как принять участие</div>
@@ -296,13 +561,14 @@
 									<div class="block__titlecond">Правила и регламент</div>
 									<div class="block__description">Основные правила участия в хакатоне.</div>
 								</li>
+								
 							</ul>
 						</div>
 					</div>
 				</div>
 				<div class="main__prize">
 					<div class="prize__container">
-						<div class="prize__title">Призы и Награды</div>
+						<div class="prize__title" id="prizes">Призы и Награды</div>
 						<div class="prize__blocks">
 							<div class="prize__leftblock">
 								<div class="prize__oneupblock">
@@ -310,7 +576,10 @@
 									<div class="oneupblock__image"><img src="./image/pyramydeprize.png" alt=""></div>
 								</div>
 								<div class="prize__onedownblock">
-									<div class="onedownblock__image"><img src="./image/!.png" alt=""></div>
+									<div class="onedownblock__image"><svg xmlns="http://www.w3.org/2000/svg" width="5" height="78" viewBox="0 0 5 78" fill="none">
+										<rect width="5" height="60" rx="2.5" transform="matrix(-1 0 0 1 5 0.989258)" fill="#2D2DB1"/>
+										<rect width="5" height="12" rx="2.5" transform="matrix(-1 0 0 1 5 65.9893)" fill="#2D2DB1"/>
+									</svg></div>
 									<div class="onedownblock__text">Любой из участников может быть приглашен на стажировку в компании (Ag-tech или HardCode) с дальнейшим трудоустройством.</div>
 								</div>
 							</div>
@@ -318,27 +587,27 @@
 								<div class="prize__twotitle">Критерии оценки</div>
 								<ul class="prize__criteria">
 									<li class="prize__numbers">
-										<div class="numbers__item">1</div>
+										<div class="numbers__item"><span class=numbers__itemtext>1</span></div>
 										<div class="numbers__text">Соответствие требованиям поставленной задачи</div>
 									</li>
 									<li class="prize__numbers">
-										<div class="numbers__item">2</div>
+										<div class="numbers__item"><span class=numbers__itemtext>2</span></div>
 										<div class="numbers__text">Покрытие тестами</div>
 									</li>
 									<li class="prize__numbers">
-										<div class="numbers__item">3</div>
+										<div class="numbers__item"><span class=numbers__itemtext>3</span></div>
 										<div class="numbers__text">Использование контейнеризации</div>
 									</li>
 									<li class="prize__numbers">
-										<div class="numbers__item">4</div>
+										<div class="numbers__item"><span class=numbers__itemtext>4</span></div>
 										<div class="numbers__text">Следование best practice при разработке</div>
 									</li>
 									<li class="prize__numbers">
-										<div class="numbers__item">5</div>
+										<div class="numbers__item"><span class=numbers__itemtext>5</span></div>
 										<div class="numbers__text">Отказоустойчивость</div>
 									</li>
 									<li class="prize__numbers">
-										<div class="numbers__item">6</div>
+										<div class="numbers__item"><span class=numbers__itemtext>6</span></div>
 										<div class="numbers__text">Оптимальное использование БД</div>
 									</li>
 								</ul>
@@ -357,7 +626,7 @@
 		<footer class="footer">
 			<div class="footer__line"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="2" viewBox="0 0 1880 2" fill="none">
 				<path opacity="0.5" d="M0 0.994629H1880" stroke="#91A4AE" stroke-width="1.5" stroke-dasharray="20 20"/>
-			 </svg></div>
+			</svg></div>
 			<div class="footer__container">
 				<div class="footer__name">© 2024, CraftCode</div>
 				<div class="footer__icon">
